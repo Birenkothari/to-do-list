@@ -1,21 +1,21 @@
 export interface Task {
-  taskId: number;
-  taskName: string;
-  taskListId: number;
+	taskId: number;
+	taskName: string;
+	taskListId: number;
 }
 
 export interface ToDoCategory {
-  categoryId: string;
-  categoryName: string;
+	categoryId: string;
+	categoryName: string;
 }
 
 export interface ToDoCategoriesContextProps {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }
 
 export interface ToDoCategoriesContextType {
-  toDoCategories: ToDoCategory[];
-  addToDoCategory: (category: ToDoCategory) => void;
-  deleteToDoCategory: (categoryId: number) => void;
-  updateToDoCategory: (category: ToDoCategory) => void;
+	toDoCategories: ToDoCategory[];
+	addToDoCategory: (category: ToDoCategory) => void;
+	deleteToDoCategory: (categoryId: number) => void;
+	updateToDoCategory: (category: ToDoCategory) => void;
 }
